@@ -47,12 +47,10 @@ ul, li {
 }
 .table_left ul>li {
     display: flex;
-
 }
 .lefttext{
     color: rgb(233,91,17);
     text-decoration-line: underline;
-
 }
 .table_right {
     width: 200px;
@@ -63,6 +61,9 @@ ul, li {
     text-align: center;
     background-color: rgb(189, 189, 189);
     padding-top: 20px;
+}
+.righttext{
+    color: black;
 }
 hr {
     width: 50%;
