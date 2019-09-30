@@ -15,5 +15,5 @@
 # Task 02:
 
 # Lesson-05
-
+* https://github.com/valentynskotnitskyi/homework/blob/master/lesson-05/index.html
 
