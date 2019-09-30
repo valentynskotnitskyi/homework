@@ -1,16 +1,16 @@
 # homework
-lesson-01 https://github.com/valentynskotnitskyi/homework/lesson-01/01_exercise/cv-1_1.html 
-https://github.com/valentynskotnitskyi/homework/lesson-01/01_exercise/cv-1_2.html
+#Lesson-01 
 
-lesson-02 
+#Lesson-02 
 
-Task 01: https://github.com/valentynskotnitskyi/homework/lesson-02/01_exercise/03_index.html
+#Task 01:
 
-Task 02: https://github.com/valentynskotnitskyi/homework/lesson-02/02_exercise/01_index.html
+#Task 02: 
 
-lesson-04:
+#Lesson-04:
 
-simple: https://github.com/valentynskotnitskyi/homework/lesson-04/simple/index.html
+#Task 01:
 
-hard: https://github.com/valentynskotnitskyi/homework/lesson-04/hard/index.html
+#Task 02: 
+
 
