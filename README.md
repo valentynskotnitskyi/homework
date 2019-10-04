@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-# homework
-# Lesson-01 
-
-# Lesson-02 
-
-# Task 01:
-
-# Task 02: 
-
-# Lesson-04:
-
-# Task 01:
-
-# Task 02: 
 =======
 # Lesson-01 
 * https://github.com/valentynskotnitskyi/homework/blob/master/lesson-01/01_exercise/cv-1_1.html
@@ -25,7 +10,6 @@
 # Lesson-04
 * Task 01: https://github.com/valentynskotnitskyi/homework/blob/master/lesson-04/simple/index.html 
 * Task 02: https://github.com/valentynskotnitskyi/homework/blob/master/lesson-04/hard/index.html
->>>>>>> 083146cf26f6be660ddddedc6e06904249238563
 
 # Lesson-05
 * https://github.com/valentynskotnitskyi/homework/blob/master/lesson-05/index.html
