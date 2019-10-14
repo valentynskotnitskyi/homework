@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html {
+    height: 100%;
+}   
+body {
+    background-color: #fdde7e;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.cup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    width: 360px;
+    height: 445px;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+.gold {
+    height: 500px;
+}
+.price {
+    font-family: "Miso Bold", sans-serif;
+    font-size: 70px;
+    color: #02995b;
+}
+.title {
+    font-family: "Miso", sans-serif;
+    font-size: 56px;
+}
+.title:first-letter {
+    text-transform: uppercase;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    opacity: 0.7;
+    width: 154px;
+    text-align: center;
+}
+@font-face {
+    font-family: "Miso";
+    src: url("./assets/fonts/miso.otf");
+}
+@font-face {
+    font-family: "Miso Bold";
+    src: url("./assets/fonts/miso-bold.otf");
+}

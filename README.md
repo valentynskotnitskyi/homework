@@ -22,4 +22,4 @@ Lesson-07
 [task-02](https://valentynskotnitskyi.github.io/homework/lesson-07/task-02/index.html) 
 
 Lesson-08
-[task-01]()
+[task-01](https://valentynskotnitskyi.github.io/homework/lesson-08/task-01/index.html)
