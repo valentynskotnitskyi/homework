@@ -23,3 +23,4 @@ Lesson-07
 
 Lesson-08
 [task-01](https://valentynskotnitskyi.github.io/homework/lesson-08/task-01/index.html)
+[task-02](https://valentynskotnitskyi.github.io/homework/lesson-08/task-02/index.html)

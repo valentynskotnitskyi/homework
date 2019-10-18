@@ -1,6 +1,86 @@
+@font-face {
+    font-family: 'HansKendrick Regular';
+    src: url('./assets/fonts/HansKendrick-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'HansKendrick Regular';
+    text-transform: uppercase;
 } 
 
+body {
+    background: #e2e7ec;
+    margin: 90px auto;
+    max-width: 1140px; 
+}
+
+/*all colums*/
+.wrapper {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.item-wrapper {
+    display: flex;
+    flex: 1 0 33.33%;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+/*main container*/
+.main-item {
+    display: flex;
+    flex: 66.66%;
+    color: white;
+    padding: 10px;
+}
+
+.main-image {
+    display: flex;
+    align-items: flex-end;
+    background-image: url(./assets/image/Leyer\ 8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.main-description {
+width: 75%;
+}
+
+/*description styles*/
+h1 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+h2 {
+    padding: 20px;
+    font-size: 22px;
+}
+
+.date {
+    color: rgb(143, 143, 143);
+    margin-bottom: 22px;
+    font-size: 13px;
+    padding: 20px;
+}
+
+/*footer*/
+footer {
+    padding: 20px;
+    align-self: end;
+    margin-top: 20px;
+}
