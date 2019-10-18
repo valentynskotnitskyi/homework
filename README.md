@@ -7,8 +7,8 @@ Lesson-02
 [task-02](https://valentynskotnitskyi.github.io/homework/lesson-02/task-02/01_index.html) 
 
 Lesson-04
-[task-01](https://valentynskotnitskyi.github.io/homework/lesson-04/task-01/index.html)
-[task-02](https://valentynskotnitskyi.github.io/homework/lesson-04/task-02/index.html) 
+[task-01](https://valentynskotnitskyi.github.io/homework/lesson-04/simple/index.html)
+[task-02](https://valentynskotnitskyi.github.io/homework/lesson-04/hard/index.html) 
 
 Lesson-05
 [task-01](https://valentynskotnitskyi.github.io/homework/lesson-05/index.html)
