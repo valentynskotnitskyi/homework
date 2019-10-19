@@ -19,10 +19,11 @@ body {
     max-width: 1140px; 
 }
 
+
 /*all colums*/
 .wrapper {
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap; 
 }
 
 .item-wrapper {
@@ -35,14 +36,22 @@ body {
 .item {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;       
     background-color: #fff;
+}
+
+.content  {
+    flex-grow: 1;
+}
+
+.content img {
+    max-width: 100%;
 }
 
 /*main container*/
 .main-item {
-    display: flex;
-    flex: 66.66%;
+    flex: 2 0 66.66%;
+    max-width: 66.66%;
     color: white;
     padding: 10px;
 }
@@ -53,11 +62,13 @@ body {
     background-image: url(./assets/image/Leyer\ 8.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
+
 .main-description {
-width: 75%;
+    width: 75%;
 }
 
 /*description styles*/
@@ -81,6 +92,9 @@ h2 {
 /*footer*/
 footer {
     padding: 20px;
-    align-self: end;
     margin-top: 20px;
+}
+
+footer img {
+    max-width: 100%;
 }
