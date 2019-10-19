@@ -83,6 +83,7 @@ h2 {
 }
 
 .date {
+    min-height: 57px;
     color: rgb(143, 143, 143);
     margin-bottom: 22px;
     font-size: 13px;
