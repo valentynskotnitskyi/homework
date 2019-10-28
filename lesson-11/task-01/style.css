@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Raleway Heavy';
+    src: url('./assets/fonts/Raleway-Heavy.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body>* {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+.menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 145px;
+    margin: 0 auto;
+    padding: 150px;
+    color: #262626;
+}
+
+.menu_logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.menu_logo__link {
+    color: #262626;
+}
+
+.menu_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+.menu_nav__item {
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu_nav__link {
+    color: #262626;
+}
+
+.menu_nav__link:focus {
+    padding: 10px 0;
+    border-top: 3px solid #ff6033;
+}
+
+/*HOME*/
+.container-home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 855px;
+    padding: 150px;
+    margin: 0 auto;
+    background: url('./assets/images/img_2.jpg') 50% no-repeat;
+    background-size: cover;
+    
+}
+
+.container-home_title {
+    font-family: "Raleway Heavy";
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+.container-home_description {
+    width: 33%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #262626;
+    padding: 35px 0;
+}
+
+/*BUTTON*/
+
+.button {
+    background-color: #ff6033;
+    padding: 20px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-width: 0;
+    border-style: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button_link {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.button_link:hover {
+    opacity: 1;
+}
+
+/*ABOUT*/
+
+.container-about{
+    background-color: #00b1b1;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 150px;
+}
+
+.container-about_img {
+    max-width: 100%;
+}
+
+.container-about_text {
+    display: flex;
+    flex: 1 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.container-about_title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.container-about_description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px; 
+    opacity: 0.7;
+}
+

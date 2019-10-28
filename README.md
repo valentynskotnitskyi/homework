@@ -32,3 +32,7 @@ Lesson-09
 Lesson-10
 [task-01](https://valentynskotnitskyi.github.io/homework/lesson-10/task-01/index.html)
 [task-02](https://valentynskotnitskyi.github.io/homework/lesson-10/task-02/index.html)
+
+Lesson-11
+[task-01](https://valentynskotnitskyi.github.io/homework/lesson-11/task-01/index.html)
+[task-02](https://valentynskotnitskyi.github.io/homework/lesson-11/task-02/index.html)
