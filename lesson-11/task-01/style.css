@@ -28,7 +28,7 @@ a {
     align-items: center;
     height: 145px;
     margin: 0 auto;
-    padding: 150px;
+    padding: 0 150px;
     color: #262626;
 }
 
@@ -71,12 +71,11 @@ a {
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
-    height: 855px;
+    height: 100vh;
     padding: 150px;
     margin: 0 auto;
     background: url('./assets/images/img_2.jpg') 50% no-repeat;
     background-size: cover;
-    
 }
 
 .container-home_title {
@@ -125,6 +124,7 @@ a {
     flex-wrap: wrap;
     color: #fff;
     padding: 150px;
+    height: 100vh;
 }
 
 .container-about_img {
@@ -139,14 +139,14 @@ a {
     padding-left: 80px;
 }
 
-.container-about_title {
+.container-about_text__title {
     font-family: 'Raleway', sans-serif;
     font-size: 90px;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.container-about_description {
+.container-about__description {
     font-family: 'Raleway', sans-serif;
     font-size: 17px; 
     opacity: 0.7;
