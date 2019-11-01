@@ -39,6 +39,7 @@ a {
 
 .menu_logo__link {
     color: #262626;
+    text-transform: capitalize;
 }
 
 .menu_nav {

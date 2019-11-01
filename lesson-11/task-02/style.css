@@ -16,8 +16,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
-    background: url(./assets/images/background.jpg) 50% no-repeat;
+    background-image: url(./assets/images/background.jpg) 50% no-repeat;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -42,9 +46,7 @@ a {
     display: flex;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 .slider_img {
     padding-top: 100px;
@@ -84,7 +86,7 @@ img {
     color: yellow;
     opacity: 1;
 }
-  
+
 .slider_section__rating--item:hover {
     transform: scale(1.05);
 }
