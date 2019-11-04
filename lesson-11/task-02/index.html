@@ -12,56 +12,68 @@
     <title>Document</title>
 </head>
 
-<body class="wrapper">
-    <main class="slider_inner darkblue">
-        <section class="slaider_section__main">
-            <header class="slider_header__logo"><img src="./assets/images/logo.png" alt="snickers"></header>
+<body>
 
-            <div class="slider_img"><img src="./assets/images/snickers.png" alt="snickers"></div>
+    <main class="wrapper">
+        <div class="slider">
 
-            <div class="slider_input">
-                <label> <input type="radio" name="snickers" value="darkblue"></label>
-                <label> <input type="radio" name="snickers" value="white"></label>
-                <label> <input type="radio" name="snickers" value="red"></label>
-                <label> <input type="radio" name="snickers" value="aqua"></label>
-            </div>
-        </section>
+            <!--Left section-->
 
+            <section class="slider_section__left">
+                <header class="section_left__logo">
+                    <img src="./assets/images/logo.png" alt="snickers">
+                </header>
 
-        <section class="slider_section">
+                <div class="section_left__img">
+                    <img src="./assets/images/snickers.png" alt="snickers">
+                </div>
 
-            <h1 class="slider_section__name">nike sb stefan janoski max</h1>
+                <ul class="section_left__button">
+                    <li><button class="button button--darkblue"></button></li>
+                    <li><button class="button button--white"></button></li>
+                    <li><button class="button button--red"></button></li>
+                    <li><button class="button button--blue"></button></li>
+                </ul>
+            </section>
 
-            <p class="slider_section__description">unisex skateboarding shoe</p>
+            <!--Right section-->
 
-            <ul class="slider_section__rating">
-                <li class="slider_section__rating--item"><i class="fas fa-star"></i></li>
-                <li class="slider_section__rating--item"><i class="fas fa-star"></i>️</li>
-                <li class="slider_section__rating--item">️<i class="fas fa-star"></i></li>
-                <li class="slider_section__rating--item"><i class="fas fa-star"></i>️</li>
-                <li class="slider_section__rating--item"><i class="fas fa-star"></i>️</li>
-            </ul>
+            <section class="slider_section__right">
 
-            <form action="#">
+                <h1 class="section_right__name">nike sb stefan janoski max</h1>
 
-                <select class="slider_section__size" id="size" name="size">
-                    <option value="" selected="selected">size</option>
-                    <option value="42">42</option>
-                    <option value="40">40</option>
-                </select>
+                <p class="section_right__description">unisex skateboarding shoe</p>
 
+                <!--Rating-->
 
-                <select class="slider_section__qty" id="qty" name="size">
-                    <option value="" selected="selected">qty</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                </select>
+                <ul class="section_right__rating">
+                    <li class="section_right__rating--item"><i class="fas fa-star"></i></li>
+                    <li class="section_right__rating--item"><i class="fas fa-star"></i>️</li>
+                    <li class="section_right__rating--item">️<i class="fas fa-star"></i></li>
+                    <li class="section_right__rating--item"><i class="fas fa-star"></i>️</li>
+                    <li class="section_right__rating--item"><i class="fas fa-star"></i>️</li>
+                </ul>
 
+                <!--Form-->
 
-                <button class="slider_section__button" type="submit">add to cart</button>
-            </form>
-        </section>
+                <form class="section_right__form" action="#">
 
+                    <select class="form__size" id="size" name="size">
+                        <option value="" selected="selected">size</option>
+                        <option value="42">42</option>
+                        <option value="40">40</option>
+                    </select>
+
+                    <select class="form__qty" id="qty" name="size">
+                        <option value="" selected="selected">qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <button class="form__button" type="submit">add to cart</button>
+                </form>
+            </section>
+        </div>
     </main>
 </body>
 
