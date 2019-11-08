@@ -27,8 +27,6 @@ body {
     flex-wrap: wrap; 
 }
 
-
-/*860 1>2 560 1>1*/
 .item-wrapper {
     display: flex;
     flex: 1 0 33.33%;
@@ -37,9 +35,13 @@ body {
 }
 
 @media screen and (max-width: 860px) {
+    body {
+        margin: 0 auto;
+    }
+    
     .main-item {
         min-width: 100vw;
-        height: 50vh;
+        height: 400px;
     }
 
     .item-wrapper {
@@ -51,7 +53,7 @@ body {
 @media screen and (max-width: 560px) {
     .main-item {
         max-width: 100%;
-        height: 50vh;
+        height: 400px;
     }
 
     .item-wrapper {
