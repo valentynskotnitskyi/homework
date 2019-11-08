@@ -98,6 +98,25 @@ img {
     border-left: 1px solid $color-main;
 }
 
+.prev {
+    display: flex;
+    align-items: center;
+            
+    i {
+        font-size: 30px;
+        color: $color-main;
+        transition: all 0.2s linear;
+
+        &:hover,
+        &:active,
+        &:focus {
+        color: $color-text;
+        cursor: pointer;
+        font-size: 32px;
+        }
+    }
+}
+
 .section {
     @extend %position-center;
     text-align: center;
@@ -109,23 +128,7 @@ img {
         display: flex;
         align-items: center;
         
-        .prev {
-            width: 80px;
-            
-            i {
-                font-size: 30px;
-                color: $color-main;
-                transition: all 0.2s linear;
-
-                &:hover,
-                &:active,
-                &:focus {
-                    color: $color-text;
-                    cursor: pointer;
-                    font-size: 32px;
-                }
-            }
-        }
+        
 
         .image {
             position: relative;
@@ -197,6 +200,17 @@ img {
 
     &__description {
        @extend %fonts-primary;
+    }
+}
+
+.dots {
+    display: inline-block;
+    
+    &__item {
+    width: 100px;
+    height: 2px;
+    background-color: $color-main;
+    margin: 0 auto;
     }
 }
 
