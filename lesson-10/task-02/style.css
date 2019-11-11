@@ -61,6 +61,12 @@ ul {
     padding: 15px;
 }
 
+@media screen and (max-width: 600px) {
+    .container_item {
+        height: 134px;
+    }
+}
+
 .container_item__img {
     display: block;
     position: relative; 
@@ -85,9 +91,8 @@ ul {
 /*Footer*/
 
 .footer {
-    position: relative;
+    position: absolute;
     top: 120%;
-    right: 100%;
     text-transform: capitalize;
     white-space: nowrap;
 }
@@ -112,13 +117,19 @@ ul {
     justify-content: center;
     align-items: center;
     position: absolute;
-    min-height: 270px;
+    height: 270px;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgb(44, 168, 198, 0.5);
     transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+    .container_item__img:hover .container_item__hover {
+        height: 134px;
+    }
 }
 
 .container_item__hover__icon:hover {
