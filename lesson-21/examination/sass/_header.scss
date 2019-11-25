@@ -116,7 +116,11 @@
         
         &_menu {
             display: flex;
-                                 
+            
+            @include mobile {
+                flex-flow: column wrap;
+            }  
+
             &__item {
                 text-align: center;
                 padding: 15px;
@@ -131,39 +135,12 @@
                 &:focus {
                 color: #333333;
                 }
-
-                @include tablet {
-                    position: absolute;
-                    top: 30px;
-                    height: 0;
-                    transform: translateY(-100%);
-                    background-color: #ffffff;
-                    color: $main-color;
-                    overflow: hidden;
-                    transition: height 0.5s; 
-    
-                    .menu__item {
-                        padding: 15px;
-                        color: $main-color;
-    
-                        &:hover,
-                        &:active {
-                            color: #ffffff;
-                        }
-                    }
-                }
-    
-                @include tablet {
-                    &:hover,
-                    &:active {
-                       flex-direction: column;
-                       width: 100%;
-                       height: 200px;
-                       border-radius: 9px;
-                       text-align: center;
-                   }
-               }
-
+                
+                @include mobile {
+                    flex-flow: column wrap;
+                    padding: 5px;
+                }  
+                
             }
         }
 
