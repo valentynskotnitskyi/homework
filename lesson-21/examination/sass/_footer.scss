@@ -1,0 +1,46 @@
+.footer {
+    background-color: #333333;
+    padding: 120px 0 55px;
+    text-align: center;
+
+    &__logo {
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    &__discription {
+        text-transform: capitalize;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            padding: 12px;
+            transition: all 0.3s ease-in-out;
+        
+            &:hover {
+                color: $main-color;
+                font-size: 18px;
+                text-shadow: 2px 2px 2px rgb(255, 255, 255);
+            }
+
+            &--color {
+                color: $main-color;
+            }
+        }
+    }
+
+    .social:hover .social__item:not(:hover) {
+        color: #ffffff;
+    }
+}
+

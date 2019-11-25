@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.header__wrapper {
+  height: 100%;
+}
+.header__wrapper .container {
+  height: 100%;
+}
+.header__wrapper .container .header__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+.header__discription {
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 5px;
+  padding-bottom: 50px;
+}
+
+.form__wrapper {
+  padding: 30px 0;
+  max-width: 650px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 700px) {
+  .form__wrapper {
+    max-width: 100%;
+  }
+}
+.form__wrapper .form__search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.form__wrapper .form__search--input {
+  border: none;
+  height: 60px;
+  text-align: center;
+  width: 500px;
+  max-width: 100%;
+  padding: 25px 0;
+}
+.form__wrapper .form__search ::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+}
+@media only screen and (max-width: 500px) {
+  .form__wrapper .form__search {
+    flex-direction: column;
+  }
+}
+.form__wrapper button {
+  color: #ffffff;
+  font-family: "Aleo", serif;
+  border: 3px solid #ffffff;
+  background-color: #5474fd;
+  height: 60px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.form__wrapper button:hover, .form__wrapper button:active, .form__wrapper button:focus {
+  background-color: rgba(49, 49, 49, 0.9);
+}
+.form__wrapper button svg {
+  fill: #ffffff;
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (max-width: 500px) {
+  .form__wrapper button {
+    width: 100%;
+  }
+}
+
+.header__nav {
+  background-color: #5474fd;
+  padding: 35px 0;
+  transform: translateY(-100%);
+}
+.header__nav .nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav .nav_menu {
+  display: flex;
+}
+.header__nav .nav_menu__item {
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: "Aleo", serif;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.header__nav .nav_menu__item:hover, .header__nav .nav_menu__item:active, .header__nav .nav_menu__item:focus {
+  color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .header__nav .nav_menu__item {
+    position: absolute;
+    top: 30px;
+    height: 0;
+    transform: translateY(-100%);
+    background-color: #ffffff;
+    color: #5474fd;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+  .header__nav .nav_menu__item .menu__item {
+    padding: 15px;
+    color: #5474fd;
+  }
+  .header__nav .nav_menu__item .menu__item:hover, .header__nav .nav_menu__item .menu__item:active {
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__nav .nav_menu__item:hover, .header__nav .nav_menu__item:active {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    border-radius: 9px;
+    text-align: center;
+  }
+}
+.header__nav .nav__logo {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 30px;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_first {
+  background-image: url(../images/image_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 690px;
+}
+
+.section_second {
+  background-color: #333333;
+}
+
+.section_third {
+  background-image: url(../images/image_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+}
+
+.section_fourth {
+  background-image: url(../images/image_5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+}
+
+.section_fifth {
+  background-image: url(../images/image_6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 730px;
+}
+
+.container_block {
+  width: 50%;
+  padding-left: 15px;
+  margin-top: 120px;
+  padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .container_block {
+    width: 100%;
+  }
+}
+.container_block__title {
+  text-transform: capitalize;
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding-bottom: 65px;
+}
+.container_block__title--small {
+  text-transform: uppercase;
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.container_block__discription {
+  padding-bottom: 35px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.container_block__discription i {
+  color: #5474fd;
+  padding: 10px;
+}
+.container_block__subtitle {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.btn {
+  border: none;
+  color: #ffffff;
+  font-family: "Aleo", serif;
+  background: linear-gradient(45deg, #496bfe 50%, #5474fd 50%);
+  padding: 25px;
+  min-width: 225px;
+  text-transform: uppercase;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #333333;
+  box-shadow: 2px 2px #ffffff;
+}
+
+.images {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.images .image__first {
+  padding: 5px;
+  max-width: 350px;
+  max-height: 220px;
+}
+.images .image__second {
+  padding: 5px;
+  max-width: 350px;
+  max-height: 220px;
+  align-self: flex-end;
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px 0;
+}
+.icon_item {
+  margin: 0 auto;
+  text-align: center;
+}
+.icon_item svg {
+  height: 62px;
+  width: 62px;
+}
+.icon_item__title {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding-top: 30px;
+  text-transform: capitalize;
+}
+
+.background {
+  background-color: rgba(49, 49, 49, 0.9);
+  margin: 230px 0 100px 0;
+}
+
+.container_feedback {
+  margin-top: 120px;
+}
+.container_feedback__title {
+  text-transform: capitalize;
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 0 0 100px 0;
+  text-align: center;
+}
+.container_feedback__wrapper {
+  display: flex;
+  background-color: rgba(49, 49, 49, 0.9);
+}
+.container_feedback__wrapper .feedback__image {
+  min-width: 445px;
+  min-height: 285px;
+}
+.container_feedback__wrapper .feedback__inner {
+  padding: 60px;
+}
+
+.footer {
+  background-color: #333333;
+  padding: 120px 0 55px;
+  text-align: center;
+}
+.footer__logo {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.footer__discription {
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+}
+.footer .social__item {
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.footer .social__item:hover {
+  color: #5474fd;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px white;
+}
+.footer .social__item--color {
+  color: #5474fd;
+}
+.footer .social:hover .social__item:not(:hover) {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

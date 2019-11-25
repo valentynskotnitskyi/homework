@@ -1,0 +1,39 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+$main-color:#5474fd;
+
+@mixin tablet {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phablet {
+    @media only screen and (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@import "base";
+
+@import "header";
+
+@import "main";
+
+@import "footer";
