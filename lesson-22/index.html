@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<script src="./js/main.js"></script>-->
+    <script src="./js/valuta.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="num1">
+    </div>
+    <div>
+        <input type="text" id="num2">
+    </div>
+    <div>
+        <button id="btn">Result</button>
+    </div>
+
+    <script>
+        var inputFrom = document.getElementById('num1');
+        var inputTo = document.getElementById('num2');
+        var button = document.getElementById('btn');
+
+        button.addEventListener('click', function () {
+            let sum = 0;
+            let i = Number(inputFrom.value);
+
+            while (i <= Number(inputTo.value)) {
+                sum = sum + i;
+                i = i + 1;
+            }
+
+            //var sum = Number(inputFrom.value) + Number(inputTo.value);
+            alert(sum);
+        });
+
+
+    </script>
+</body>
+
+</html>
