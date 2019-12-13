@@ -57,3 +57,9 @@ Lesson-23
 
 Lesson-24
 [js-03](https://valentynskotnitskyi.github.io/homework/lesson-24/index.html)
+
+Lesson-25
+[js-04](https://valentynskotnitskyi.github.io/homework/lesson-25/index.html)
+
+Lesson-26
+[js-05](https://valentynskotnitskyi.github.io/homework/lesson-26/index.html)
