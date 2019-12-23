@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="parent">
+        <span>all</span>
+        <span class="text">all</span>
+        <span class="text">world</span>
+        <span class="text">hello</span>
+
+    </div> -->
+    <div>
+        <button id="toggler-button">click me!</button>
+    </div>
+
+    <div id="text-content">Hello motor!</div>
+    <script>
+
+        document.getElementById("toggler-button").addEventListener("click", fun);
+
+        function fun() {
+            document.getElementById('text-content').innerHTML = 'Hello Vasja!!!';
+
+            let motor = document.getElementById('text-content');
+            motor.style.fontSize = "25px";
+            motor.style.color = "red";
+        }
+
+    </script>
+
+</body>
+
+</html>

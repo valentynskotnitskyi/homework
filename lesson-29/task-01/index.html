@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .light {
+            width: 40px;
+            height: 40px;
+            background-color: #999;
+            border-radius: 40px;
+        }
+
+        .active {
+            background-color: #555555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="svetlofor">
+        <div class="light active">red</div>
+        <div class="light">yellow</div>
+        <div class="light">green</div>
+        <div class="light">blue</div>
+    </div>
+
+    <div>
+        <button id="toggle-button">switch</button>
+    </div>
+
+    <script>
+
+        let $button = document.getElementById('toggle-button');
+        let $lightsList = document.getElementsByClassName('light');
+
+        let svetlofor = [{
+            color: 'red',
+            isActive: true,
+        }, {
+            color: 'yellow',
+            isActive: false,
+        }, {
+            color: 'blue',
+            isActive: false,
+        }, {
+            color: 'green',
+            isActive: false,
+        }];
+
+        function getActiveIndex(list) {
+            for (let i = 0; i < list.length; i++) {
+                if (list[i].isActive) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        function turnSectionOn(section) {
+            section.isActive = true;
+        }
+
+        function turnSectionOff(section) {
+            section.isActive = false;
+        }
+
+        let directionForward = true;
+
+
+        $button.addEventListener('click', function () {
+            let activeIndex = getActiveIndex(svetlofor);
+            let activeSection = svetlofor[activeIndex];
+
+
+            if (activeIndex !== -1) {
+                turnSectionOff(activeSection);
+                $lightsList[activeIndex].classList.remove('active');
+            }
+
+            if (activeIndex === svetlofor.length - 1) {
+                directionForward = false;
+            } else if (activeIndex === 0) {
+                directionForward = true;
+            }
+
+            let nextIndex;
+            if (directionForward) {
+                nextIndex = activeIndex + 1;
+            } else {
+                nextIndex = activeIndex - 1;
+            }
+
+            // let nextIndex = activeIndex + (directionForward ? 1 : -1);
+            let nextSection = svetlofor[nextIndex];
+
+            turnSectionOn(nextSection);
+
+            $lightsList[nextIndex].classList.add('active');
+
+            console.log(svetlofor);
+        });
+
+    </script>
+</body>
+
+</html>
