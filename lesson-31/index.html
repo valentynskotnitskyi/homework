@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <ul id="slide">
+            <li class="slide__item">
+                <img src="./image/img_01.jpg" alt="picture">
+            </li>
+            <li class="slide__item">
+                <img src="./image/img_02.jpg" alt="picture">
+            </li>
+            <li class="slide__item">
+                <img src="./image/img_03.jpg" alt="picture">
+            </li>
+            <li class="slide__item">
+                <img src="./image/img_04.jpg" alt="picture">
+            </li>
+        </ul>
+    </div>
+    <div class="slide__btn">
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script>
+
+        var slideNow = 1;
+        var slideCount = $('#slide').children().length;
+        var slideInterval = 3000;
+        var translateWidth = 0;
+
+        $(document).ready(function () {
+            var switchInterval = setInterval(nextSlide, slideInterval);
+
+            $('#wrapper').hover(function () {
+                clearInterval(switchInterval);
+            }, function () {
+                switchInterval = setInterval(nextSlide, slideInterval);
+            });
+
+            $('#next-btn').click(function () {
+                nextSlide();
+            });
+
+            $('#prev-btn').click(function () {
+                prevSlide();
+            });
+
+        });
+
+
+        function nextSlide() {
+            if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
+                $('#slide').css('transform', 'translate(0, 0)');
+                slideNow = 1;
+            } else {
+                translateWidth = -$('#wrapper').width() * (slideNow);
+                $('#slide').css({
+                    'transform': 'translate(' + translateWidth + 'px, 0)',
+                });
+                slideNow++;
+            }
+        }
+
+        function prevSlide() {
+            if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
+                translateWidth = -$('#wrapper').width() * (slideCount - 1);
+                $('#slide').css({
+                    'transform': 'translate(' + translateWidth + 'px, 0)',
+                });
+                slideNow = slideCount;
+            } else {
+                translateWidth = -$('#wrapper').width() * (slideNow - 2);
+                $('#slide').css({
+                    'transform': 'translate(' + translateWidth + 'px, 0)',
+                });
+                slideNow--;
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
